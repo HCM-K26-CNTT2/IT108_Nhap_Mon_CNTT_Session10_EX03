@@ -1,0 +1,28 @@
+﻿Bài 3 : Giảm chi phí vận hành Chatbot AI                                                                                                                                                                               
+Phần 1. Phân tích bài toán: Vì sao Markdown giúp AI xử lý nhanh hơn?
+* Cơ chế Token: AI không đọc từng từ mà chia văn bản thành các mẫu ký tự nhỏ (Token).
+* HTML quá rườm rà: Chứa hàng loạt <div>, <table>, <tr>, class, style khiến số lượng token tăng vọt lên ~2.350 tokens.
+* Markdown tinh gọn: Chỉ dùng các ký hiệu tối giản (#, -, **) nên tốn rất ít token (~620 tokens, giảm ~74%).
+* Tốc độ xử lý: Càng ít token đầu vào, AI tính toán càng ít. Thời gian phản hồi giảm từ 8.2 giây xuống còn 1.6 giây (nhanh hơn ~80%).
+Phần 2. So sánh & Đánh giá
+1. Bảng so sánh Markdown và HTML
+Ngôn ngữ 
+	HTML 
+	Markdown 
+	Số lượng ký tự
+	Nhiều 
+	Ít 
+	Độ dễ đọc với người dùng
+	Rối mắt khi nhìn.
+	Rõ ràng, trực quan, đọc là hiểu ngay.
+	Số lượng Token tiêu tốn
+	Rất cao 
+	Rất thấp 
+	Thời gian AI phản hồi
+	Chậm (~8.2 giây).
+	Nhanh (~1.6 giây, tăng tốc 80%).
+	2. Giải pháp cho hệ thống "GreenTech"
+* Lựa chọn: Dùng định dạng Markdown làm dữ liệu giao tiếp với AI.
+* Lý do lựa chọn:
+* Phản hồi nhanh cho nông dân: Giảm độ trễ từ 8.2s còn 1.6s, giúp người dùng nhận hướng dẫn xử lý sâu bệnh ngay lập tức kể  cả khi mạng yếu.
+* Tiết kiệm tới 74% chi phí
